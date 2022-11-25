@@ -52,7 +52,7 @@ if __name__ == '__main__':
     ur = []
 
 
-    def momenta_shuju():
+    def better():
         url = 'https://tag.planning.momenta.works/#/abnormal'
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'lxml')
@@ -64,7 +64,7 @@ if __name__ == '__main__':
         ur.append(ul)
 
 
-    momenta_sj()
+    better()
     # 获取数据标注平台需要的数据
 with open('D:\sll.csv', 'w', encoding='utf-8') as f:
     try:
