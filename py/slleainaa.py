@@ -52,7 +52,7 @@ if __name__ == '__main__':
     ur = []
 
 
-    def momenta_sj():
+    def momenta_shuju():
         url = 'https://tag.planning.momenta.works/#/abnormal'
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'lxml')
