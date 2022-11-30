@@ -29,7 +29,7 @@ def concat(wenjian3, name):
     path = wenjian3+os.sep+name
     with open(path, 'w')as f:
         temp2 = ''.join(str(temp))
-        return json.dumps(temp2,f,ensure_ascii=False,indent=9)
+        return json.dump(temp2,f,ensure_ascii=False,indent=9)
 
 if not os.path.exists(wenjian3):
     os.makedirs(wenjian3)
