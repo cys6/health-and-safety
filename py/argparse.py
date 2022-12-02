@@ -21,7 +21,7 @@ def create(args):
     return a
 
 
-def create_file(wenben_name, document_content):
+def create_wenjian(wenben_name, document_content):
     for i in create(args):
         file_dir = os.path.join(create_path, i)
         print(file_dir)
@@ -36,4 +36,4 @@ if __name__ == '__main__':
     # parser.add_argument('--name','-a', help='name', type=str)
     args = parser.parse_args()
 # create(args)
-create_file(wenben_name='a', document_content='1,8,9')
+create_wenjian(wenben_name='a', document_content='1,8,9')
